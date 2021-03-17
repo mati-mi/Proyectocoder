@@ -1,0 +1,311 @@
+/* Generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700
+}
+
+h2 {
+    font-size: 2.5;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.5;
+    font-weight: 300;
+}
+
+p {
+    font-size: 16;
+    font-weight: 300;
+}
+
+
+header {
+    background-color: #161616;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div {
+    height: 150px;
+    width: 150px;
+    left: 0;
+}
+
+
+nav {
+    position: relative;
+    bottom: -2rem;
+    border-bottom: 0;
+}
+
+nav ul {
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ffffff;
+    margin: 1.2rem;
+    margin-bottom: 1;
+    font-size: 1.2rem;
+    text-decoration: none
+}
+
+
+
+.map {
+    background-image: url(img/hero2.jpg);
+}
+
+.map p {
+    color: white
+}
+
+.map a {
+    color: #db4f43
+}
+
+.map h1 {
+    font-weight: 700;
+    color: #000000
+}
+
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 5s ease;
+    transition: transform 5s ease;
+    transition: transform 5s ease, -webkit-transform 5s ease;
+}
+
+
+
+.hero {
+    height: calc(100vh - 150px);
+    background-image: url(img/hero1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+
+    min-height: 50vh;
+    width: 50%;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+.box h1 {
+    text-align: center;
+}
+
+.box a {
+    background-color: #ff0606ce;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: #000000;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 1);
+
+}
+
+
+
+.container {
+    padding: 2em;
+    text-align: center;
+}
+
+.container .best-sold {
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+}
+
+.best-sold-item {
+    width: 150px;
+    
+    border: 1px solid;
+}
+
+.best-sold-item img {
+    width: 100%;
+}
+
+
+
+main {
+    padding: 1.5em 1.5em;
+}
+
+main h2 {
+    margin-bottom: 0.5em;
+}
+
+main p {
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+}
+
+label {
+    margin: 0.5em 0;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-bottom: 0.25em;
+    padding: 0.4em 0.5em;
+    width: 100%;
+    background: #dcdcdc;
+    outline: none;
+    border: none;
+    border-radius: 0.2em;
+}
+
+select[name="sexo"] {
+    background: #dcdcdc;
+}
+
+select[name="sexo"] option {
+    background: white;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.1em;
+}
+
+input[name="mensaje"] {
+    padding: 2em;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: .5em .7em;
+    margin-top: 0.5em;
+    border-radius: 0.2em;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    background: #F2594B;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background: #db4f43;
+
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 2em;
+
+}
+
+footer .linea {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.sm {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.2rem;
+}
+
+.sm div:first-of-type {
+    margin-bottom: 1em;
+}
+
+
+@media only screen and (min-width: 368px) {}
+
+@media only screen and (min-width: 426px) {
+    main {
+        padding: 3em 2em 2.5em;
+    }
+
+    main form {
+        max-width: 70%;
+        margin: 2em auto 0;
+    }
+
+    main form input[type="submit"] {
+        margin: 0 auto;
+        width: fit-content;
+        margin-top: 2em;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    .footer__form form {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+        border-radius: .2em;
+
+    }
+
+    .footer__form input {
+        margin: 0;
+        border-radius: 0;
+        padding: .5em .7em;
+        width: fit-content;
+    }
+
+}
